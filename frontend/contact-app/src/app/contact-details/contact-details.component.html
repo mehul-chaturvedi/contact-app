@@ -1,0 +1,18 @@
+<mat-card class="mat-elevation-z8">
+  <mat-card-header>
+    <mat-card-title>Contact Details</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <p>
+      {{ contact.name }}
+    </p>
+    <p>
+      {{ contact.phone }}
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button (click)="sendMessage()" mat-raised-button color="primary">
+      Send Message
+    </button>
+  </mat-card-actions>
+</mat-card>

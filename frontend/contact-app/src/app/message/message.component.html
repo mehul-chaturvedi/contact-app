@@ -1,0 +1,9 @@
+<div class="messagecontainer">
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="OTP" [value]="otp" #message />
+  </mat-form-field>
+  <br />
+  <button (click)="sendMessage(message)" mat-raised-button color="primary">
+    Send
+  </button>
+</div>
