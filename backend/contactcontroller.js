@@ -1,7 +1,7 @@
 const contactlist = require("./contact-list.json");
 const fs = require("fs");
-const accountSid = "AC4c9bb06fdb393f494c4e9a94274e531b";
-const authToken = "7898e17d7ff7043bebaaff81daaf912e";
+const accountSid = "Your twilio account sid";
+const authToken = "twilio auth token";
 const client = require("twilio")(accountSid, authToken);
 
 //get contact list from json
@@ -13,7 +13,7 @@ exports.sendMessage = function(req, res) {
   client.messages
     .create({
       body: req.body.message,
-      from: "+19402360793",
+      from: "your twilio number",
       to: req.body.phone
     })
     .then(message => {
