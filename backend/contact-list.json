@@ -1,3 +1,4 @@
+//enter your contacts numbers, numbers must be verified on twilio, there is an option
 {"contact_list":[
     {
         "name": "John Doe",
