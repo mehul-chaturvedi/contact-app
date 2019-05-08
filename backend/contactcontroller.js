@@ -1,5 +1,6 @@
 const contactlist = require("./contact-list.json");
 const fs = require("fs");
+//enter your twilio details
 const accountSid = "Your twilio account sid";
 const authToken = "twilio auth token";
 const client = require("twilio")(accountSid, authToken);
